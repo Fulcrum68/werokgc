@@ -1,0 +1,611 @@
+/*Master Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Helvetica, Verdana, sans-serif
+}
+
+body { 
+    background: url("images/output-onlinepngtools.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+/*Nav Bar*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;  
+    z-index: 1;
+    transition: 0.5s;
+    
+    
+
+
+}
+
+.nav-link-wrapper {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+
+.right-side {
+    display: flex;
+    height: 22px;
+    padding: 30px;
+    margin-top: 50px !important; 
+    margin-right: 60px !important;
+
+}
+
+.left-side {
+    color: white;
+    height: 100px;
+    font-size: 35px;
+    font-weight: bold;
+    display: flex;
+    padding: 20px;
+}
+
+.navbar > .right-side > div {
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
+
+.active-link {
+    border-bottom: 1px solid white;
+}
+
+.active-link a {
+    color: white !important; 
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid white;
+}
+
+.nav-link-wrapper a:hover {
+    color: white;
+}
+.logo-img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin-left:60px;
+}
+
+.gclogo {
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 40px;
+}
+/*keep scrollbar always*/
+html {
+    overflow: -moz-scrollbars-vertical !important; 
+    overflow-y: scroll!important;
+
+}
+
+/*Footer*/
+
+.footer{
+    background: rgb(100, 0, 0);
+    width: auto;
+    height:75px;
+    margin-top: 200px;
+    display:grid;
+    grid-template-columns:40% 20% 40%; 
+    justify-items: center;
+    align-items:center;
+}
+
+#footer-content {
+    font-size: 1vw;
+    opacity: 0.7;
+    color: white;
+    overflow: hidden;
+}
+
+.footer-thank{
+    background: rgb(100, 0, 0);
+    width: auto;
+    height:75px;
+    margin-top: 300px;
+    display:grid;
+    grid-template-columns:40% 20% 40%; 
+    justify-items: center;
+    align-items:center;
+}
+/*Home Page*/
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.inspiration {
+    margin:auto;
+    color: white; 
+    font-weight: 800;
+    font-size: 3.5vw;
+    margin-top: 100px;
+}
+
+.join-us-link {
+    margin: auto;
+    margin-top: 360px;
+    padding-top: 0px;
+}
+
+.join-us-link a {
+    font-size: 2.5vw;
+    font-weight: 35s0;
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+#subtitle {
+    margin-top: 50px;
+    font-size: 3vw;
+}
+
+/*About Page*/
+
+.about-content {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 100px;
+    place-items: center;
+    margin-top: -70px;
+    z-index: -1;
+}
+
+
+.profile-content {
+    display: flex;
+    background-color: white;
+    opacity: 0.9;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    
+}
+
+
+#pfp {
+    height: 300px;
+    width: 300px;
+    aspect-ratio: 300/300;
+    border-radius: 20px;
+    background-size:cover;
+}
+
+#h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.profile-wrapper,.About-us {
+    margin-left: 200px;
+    margin-right:200px;
+}
+
+.text-content {
+    color: rgba(122.1874974668026, 39.20182004570961, 39.20182004570961, 1);
+    padding:20px;
+    font-size: 28px;
+
+}
+.text-content a {
+    color: rgba(122.1874974668026, 39.20182004570961, 39.20182004570961, 1);
+    font-size: 28px;
+    text-decoration: underline;
+
+}
+
+#ProfileNames {
+    margin-bottom: 10px;
+}
+
+.profile-wrapper {
+    margin-top: -100px  ;
+}
+
+.farbe {
+    background-image: linear-gradient(180deg, rgba(122, 39, 39, 0.9) 90%, rgba(122, 39, 39, 0) 100%);
+    transition: 1.5s;
+    padding-bottom: 30px;
+}
+
+
+
+/*Contact Page*/
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    opacity: 0.9;
+    padding: 50px;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.contact-content h1 {
+    color: rgba(122.1874974668026, 39.20182004570961, 39.20182004570961, 1);
+}
+
+.contact-content p {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.join-us-button {
+    background-color: rgba(122.1874974668026, 39.20182004570961, 39.20182004570961, 1);
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+    transition-duration: 0.4s;
+
+}
+.join-us-button a {
+    color: white;
+    font-size: 25px;
+}
+
+.contact-info a {
+    color: rgba(122.1874974668026, 39.20182004570961, 39.20182004570961, 1);
+    font-size: 25px;
+    border-bottom: 2px solid rgba(122.1874974668026, 39.20182004570961, 39.20182004570961, 1); 
+}
+
+.contact-info {
+    font-size: 20px;
+}
+
+
+/*Join us Page*/
+
+.join-us-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    opacity: 0.9;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 10vh;
+    text-align: left;
+    padding-bottom: 0;
+}
+
+.join-content-wrapper,.join-us-content h1 {
+    display: flex;
+    color: rgba(122.1874974668026, 39.20182004570961, 39.20182004570961, 1);  
+    margin-bottom: 20px;
+}
+
+.form-q {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    
+}
+
+.input-button {
+    inline-size: fit-content;
+    margin: 0;
+}
+
+
+#submit {
+    width: 100%;
+    display: block;
+    background-color: rgba(122.1874974668026, 39.20182004570961, 39.20182004570961, 1);
+    padding:20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 50px 0;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    text-decoration: none;
+    box-shadow: none;
+
+}
+
+#name {
+    background-color: transparent;
+	border: none;
+    margin-bottom: 50px;
+}
+
+#email{
+    background-color: transparent;
+	border: none;
+}
+
+input {
+    background-color: inherit;
+}
+
+
+/*Terms of Service*/
+
+.termscontainer{
+    padding: 200px;
+}
+.TermsOfService {
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 100px;
+    place-items: center;
+    margin-top: -70px;
+    z-index: -1;
+}
+
+.profile-content {
+    display: flex;
+    background-color: white;
+    opacity: 0.9;
+    padding: 40px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+  
+    .right-side {
+        font-size: 12px;
+   
+    }
+    #footer-content {
+        font-size: 10px;
+    }
+    .contact-info,.contact-info a,.join-us-button {
+        font-size: 3vw;
+    }
+    
+    .About-us{
+        margin-bottom:30px;
+        margin-left:30px;
+        margin-right:30px;
+    }
+
+    .profile-wrapper{
+       
+        margin-left:30px;
+        margin-right:30px;
+    }
+    
+    .contact-content,.join-us-content {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    .gclogo {
+        margin-top: 40px;
+        font-size: 15px;
+        width:100px;
+    }
+    .logo-img{
+        margin-top: 20px;
+        margin-left: -5px;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .text-content, #h1,#h2 {
+        font-size: 3vw;
+    }
+
+    .text-content {
+        padding:10px;
+        font-size: 15px;
+    
+    }
+    .text-content a {
+        font-size: 20px;
+        
+    }
+    #pfp {
+        height: 100px;
+        width: 100px;
+        aspect-ratio: 100 / 100;
+    }
+
+    .about-content {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .inspiration, .join-us-link a {
+        font-size: 7vw;
+    }
+
+    .farbe {
+        padding-bottom: 40px;
+    }
+
+    .join-us-link {
+        margin-top:50px;
+        margin-bottom: 50px;
+    }
+
+    .termscontainer{
+        padding: 100px;
+    }
+    .termscontainer p{
+        font-size: 15px;
+    }
+    .termscontainer a{
+        font-size: 15px;
+    }
+}
+
+/*Phone*/
+
+
+
+@media screen and (max-width: 500px){
+    .contact-info,.contact-info a,.join-us-button {
+        font-size: 3vw;
+    }
+    
+    
+    
+    .contact-content,.join-us-content {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    
+    .profile-wrapper, .About-us{
+        margin: 20px;
+        
+    }
+    .text-content, #h1,#h2 {
+        font-size: 3vw;
+    }
+
+    #pfp {
+        height: 100px;
+        width: 100px;
+        aspect-ratio: 100 / 100;
+        display: none;
+    }
+
+    .about-content {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
+
+    .profile-content {
+        padding: 5px;
+        margin-top: 50px;
+
+        
+    }
+    #h1 {
+        margin-top: 0px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .navbar {
+        display: grid;
+        grid-template-rows: 1fr;
+        place-items: center;
+    }
+
+
+    .contact-info,.contact-info a,.join-us-button {
+        font-size: 3vw;
+    }
+    
+    
+    
+    .contact-content,.join-us-content {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+    .gclogo {
+        color: transparent;
+    }
+    .logo-img{
+        width: 70px;
+        height: 70px;
+        display: none;
+    }
+    .profile-wrapper, .About-us{
+        min-width: 100%;
+    }
+    .text-content, #h1,#h2 {
+        font-size: 3vw;
+    }
+
+    #pfp {
+        height: 100px;
+        width: 100px;
+        aspect-ratio: 100 / 100;
+    }
+
+    .about-content {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .inspiration, .join-us-link a {
+        font-size: 7vw;
+    }
+
+    .farbe {
+        padding-bottom: 40px;
+    }
+
+    .join-us-link {
+        margin-bottom: 50px;
+    }
+
+
+}
+
+
+
+
+#thank-you {
+    text-align: center;
+}
+
+#thank-you-link {
+    font-size: 2vw;
+    text-align: center;
+}
+
+#thanks-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+#Thanks-info{
+    color: rgba(122.1874974668026, 39.20182004570961, 39.20182004570961, 1);
+    font-size: 25px;
+}
+

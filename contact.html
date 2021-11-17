@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head profile="images/Favicon.png">
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" 
+    type="image/png" 
+    href="images/Favicon.png">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <style>
+        a {text-decoration: none;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar" id="navbar">
+            <div class="left-side">
+                <div class="img-wrapper">
+                    <img src="images/gavelclublogored.png" alt="" class="logo-img">
+                </div>
+                
+                <div class="gclogo">
+                    We R Ok! <br>Gavel Club
+                </div>
+
+
+
+            </div>
+            <div class="right-side">
+
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper active-link">
+                    <a href="contact.html">contact</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h1>Contact Us:</h1>
+                    <p>Email:</p>
+                    <a href="mailto:internationalgavelclub@gmail.com">internationalgavelclub@gmail.com</a>
+                    <p>Facebook:</p>
+                    <a href="https://www.facebook.com/werokgc" target="_blank">@werokgc</a>
+                    <p>Instagram:</p>
+                    <a href="https://www.instagram.com/werokgavelclub/" target="_blank">@werokgavelclub</a>
+                </div>
+
+                <div class="join-us-button" onclick="redirect()">
+                    <a href="join.html">Join Us Here!</a>
+                </div>
+            </div>
+            
+        </div>
+            <div class="footer">   
+                <a href="termsOfService.html" id="footer-content">Terms of Service</a>
+                <a href="privacyPolicy.html"id="footer-content">Privacy Policy</a>
+                <p onclick="credits()" id="footer-content">Credits</p>
+            </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+    </div>
+    <script>
+        function redirect() {
+            window.location.href = ('join.html')    
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
